@@ -11,12 +11,10 @@ public class DigitalProduct extends Products{
         this.downloadUrl = downloadUrl;
         this.fileSizeMB = fileSizeMB;
     }
-    public String getDownloadUrl() {
-        return downloadUrl;
-    }
-    public double getFileSizeMB() {
-        return fileSizeMB;
-    }
+    public String getDownloadUrl() {return downloadUrl;}
+    public double getFileSizeMB() {return fileSizeMB;}
 
+    public void setDownloadUrl(String downloadUrl) {this.downloadUrl = downloadUrl;}
+    public void setFileSizeMB(double fileSizeMB) {this.fileSizeMB = fileSizeMB;}
 }
 
