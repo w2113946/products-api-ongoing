@@ -20,8 +20,13 @@ public class ProductsController {
         return productService.getProductById(id).orElse(null);
     }
 
+    @GetMapping("/products/summaries")
+    public List<String> getSummaries() {
+        return productService.getAllSummaries();
+    }
+
     @PostMapping("/products")
-    public Products addProducts(@RequestBody Products products){
+    public Products addProducts(@RequestBody DigitalProduct products){
         return productService.addProduct(products);
     }
 
